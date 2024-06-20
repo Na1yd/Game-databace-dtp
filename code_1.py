@@ -13,9 +13,9 @@ def print_all_games():
         sql = "SELECT * from Game;"
         cursor.execute(sql)
         results = cursor.fetchall()
-        print(f"name"                                                                                               )
+        print(f"name                                             Game_name  Rating  Release_date  Genre")
         for game in results:
-            print(game)
+            print(f"{game[0]:<30}{game[1]:<8}{game[2]:<6}{game[3]:<6}{game[4]:<6}{game[5]:<6}")
         print(results) 
 
 
